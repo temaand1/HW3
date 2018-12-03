@@ -1,0 +1,156 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    background-color:lightskyblue ;
+    color: #ffffff;
+    font-family: 'Chakra Petch', sans-serif;
+    color: black;
+}
+#click{
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    padding: 2px;
+    width: 60px;
+    height: 20px;
+    margin-top: 20px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 50px;
+    border-right: 1px solid #000000;
+    background-color: aliceblue;
+    padding: 5px;
+
+
+}
+.sidebar_item1{
+    margin-left: 5px;
+    position: relative;
+}
+
+.sidebar_item2{
+    margin-left: 5px;
+    position: relative;
+}
+.sidebar_item3{
+    margin-left: 5px;
+    position: relative;
+}
+.sidebar_item4{
+    margin-left: 5px;
+    position: relative;
+}
+.sidebar_item1:hover::after{
+    content: "Home";
+    position: absolute;
+    left: 53px;
+    top: 15px;
+    display: block;
+    text-decoration: none;
+    background: lightskyblue;
+    color:black;
+}
+.sidebar_item2:hover::after{
+    content: "Portfolio";
+    position: absolute;
+    left: 53px;
+    top: 15px;
+    display: block;
+    text-decoration: none;
+    background: lightskyblue;
+    color:black;
+}
+.sidebar_item3:hover::after{
+    content: "Contacts";
+    position: absolute;
+    left: 53px;
+    top: 15px;
+    display: block;
+    text-decoration: none;
+    background: lightskyblue;
+    color:black;
+}
+.sidebar_item4:hover::after{
+    content: "Help";
+    position: absolute;
+    left: 53px;
+    top: 15px;
+    display: block;
+    text-decoration: none;
+    background: lightskyblue;
+    color:black;
+}
+#item1{
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+    display: none;
+}
+
+#item1:target {
+    display: block;
+    background: white;
+
+}
+
+#item2{
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+    display: none;
+}
+#item2:target {
+    display: block;
+    background: white;
+}
+#item3{
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+    display: none;
+}
+#item3:target {
+    display: block;
+    background: white;
+}
+#item4{
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+    display: none;
+}
+#item4:target{
+    display: block;
+    background: white;
+}
+.bar{
+    display: flex;
+}
+
+a{
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+ul{
+    list-style: none;
+    margin-left: -40px;
+}
+li{
+    margin-top: 5px;
+}
+span{
+    padding-top:50px;
+}
